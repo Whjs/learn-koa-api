@@ -1,0 +1,31 @@
+{
+  "name": "learn-koa-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "npx nodemon src/app.js",
+    "prod": "cross-env NODE_ENV=production node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Whjs/learn-koa-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-json-error": "^3.1.2",
+    "koa-router": "^10.1.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.16"
+  },
+  "bugs": {
+    "url": "https://github.com/Whjs/learn-koa-api/issues"
+  },
+  "homepage": "https://github.com/Whjs/learn-koa-api#readme"
+}

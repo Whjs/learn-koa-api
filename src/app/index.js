@@ -2,6 +2,10 @@
 const Koa = require('koa')
 const koaBody = require('koa-body')
 const error = require('koa-json-error')
+
+// 导入router
+const userRouter = require('../router/users.route')
+
 // 实例化 app 对象
 const app = new Koa()
 
@@ -18,13 +22,8 @@ app.use(error({
 
 app.use(koaBody())
 
-// 导入router
-const userRouter = require('./router/user.route')
-
 // 中间件
 app.use(userRouter.routes())
 .use(userRouter.allowedMethods())
-// 启动服务，监听3000端口
-app.listen(3000, () => {
-  console.log('server is running on http://localhost:3000')
-})
+
+module.exports = app

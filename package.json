@@ -2,10 +2,10 @@
   "name": "learn-koa-api",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "main.js",
   "scripts": {
-    "dev": "npx nodemon src/app.js",
-    "prod": "cross-env NODE_ENV=production node src/app.js"
+    "dev": "npx nodemon src/main.js",
+    "prod": "cross-env NODE_ENV=production node src/main.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
     "nodemon": "^2.0.16"
   },
   "bugs": {

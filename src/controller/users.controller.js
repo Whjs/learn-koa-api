@@ -8,7 +8,14 @@ class UserController {
   async register (ctx, next) {
     const res = await createUser(ctx.request.body)
     console.log('register -> res', res)
-    ctx.body = '用户注册成功'
+    ctx.body = {
+      code: 0,
+      message: '用户注册成功',
+      result: {
+        id: res.id,
+        user_name: res.user_name
+      }
+    }
   }
 
   async login (ctx, next) {

@@ -11,7 +11,7 @@ const User = seq.define('zd_user', {
     unique: true,
     comment: '用户名，唯一'
   },
-  user_name: {
+  password: {
     type: DataTypes.CHAR(64),
     allowNull: false,
     comment: '密码'

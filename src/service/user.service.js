@@ -8,7 +8,7 @@ class UserService {
     // 返回结果
     // return '写入数据库成功'
     const res = await User.create({ user_name, password })
-    return res
+    return res.dataValues
   }
 }
 

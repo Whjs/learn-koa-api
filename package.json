@@ -18,7 +18,9 @@
     "koa": "^2.13.4",
     "koa-body": "^5.0.0",
     "koa-json-error": "^3.1.2",
-    "koa-router": "^10.1.1"
+    "koa-router": "^10.1.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.20.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
